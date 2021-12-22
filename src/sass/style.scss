@@ -1,0 +1,46 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/composition';
+@import 'blocks/reviews';
+@import 'blocks/about';
+@import 'blocks/order';
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.order {
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    background-color: $main-color;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(255, 83, 83);
+    font-size: 25px;
+    &:hover {
+        text-decoration: underline;
+        color: rgb(209, 224, 0);
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        width: 90vw;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .order {
+        font-size: 15px !important;
+        width: 80px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+    }
+}
